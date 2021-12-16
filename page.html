@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anime Web Page</title>
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="abc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="foot.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <link rel="stylesheet" type="text/css" href="movieslider.css">
+    <link rel="stylesheet" type="text/css" href="developer.css">
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <img src="https://i.pinimg.com/564x/87/2e/da/872eda2fad3aae10a6114c23b5b08691.jpg" height="50px">
+
+
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Top Anime</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="https://zoro.to/death-note-60?ref=search" type="_blank">Death Note</a></li>
+                        <li><a href="https://zoro.to/full-metal-panic-invisible-victory-1261?ref=search" type="_blank">Fullmetal Alchemist</a></li>
+                        <li><a href="https://zoro.to/naruto-find-the-crimson-four-leaf-clover-5694?ref=search" type="_blank">Naruto</a></li>
+                        <li><a href="https://zoro.to/attack-on-titan-112?ref=search" type="_blank">Attack on Titan</a></li>
+                        <li><a href="https://zoro.to/dragon-ball-509?ref=search" type="_blank">Dragon Ball Z</a></li>
+                        <li><a href="https://zoro.to/bleach-the-movie-fade-to-black-1492?ref=search" type="_blank">Bleach</a></li>
+                        <li><a href="https://zoro.to/cowboy-bebop-27?ref=search" type="_blank">Cowboy Bebop</a></li>
+                        <li><a href="https://zoro.to/my-hero-academia-322?ref=search" type="_blank">My Hero Academia</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Demographic</a>
+                <div class="dem">
+                    <ul>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Teens</a></li>
+                        <li><a href="#">Adults</a></li>
+                    </ul>
+                </div>     
+            </li>
+
+            <li><a href="#">Genre</a>
+                <div class="dem">
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Drama</a></li>
+                    </ul>
+                </div>     
+            </li>
+                
+            <li><a href="#">Subbed</a></li>
+            <li><a href="#">Dubbed</a></li>
+            <li><a href="#about-us">About Us</a></li>
+        </ul>
+
+
+        
+
+    </div>
+
+    <div class="search">
+        <form>
+            <input type="text" placeholder="Search for your favourite anime..."
+            <div id="button-holder">
+                <img src="https://media.istockphoto.com/vectors/magnifying-glass-icon-on-black-background-black-flat-style-vector-vector-id1161362368?k=20&m=1161362368&s=170667a&w=0&h=8rWHj78t5TUYDe1AFvtdrcZa8I_L4b6u0ylhIPkMGOg=" height="45" width="45">
+                </div>>
+        </form>
+    </div>
+
+    <div class="css-container">
+        <div class="css-slideshow" style="max-width:1280px" style="max-height:1280px">
+            <img class="mySlides" src="https://wallpapercave.com/wp/wp4771870.jpg" style="width:100%">
+            <img class="mySlides" src="https://cdn.wallpapersafari.com/64/44/gYwV8P.jpg" style="width:100%">
+            <img class="mySlides" src="https://wallpaper.dog/large/10813868.jpg" style="width:100%">
+            <img class="mySlides" src="https://cdn.wallpapersafari.com/18/59/nycCWq.jpg" style=" width:100%">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+    <br>
+    <br>
+    <div class="movie-list-container">
+        <h2 class="movie-list-title">Animes</h2>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item-img">
+                    <a href ="https://zoro.to/naruto-677?ref=search" type="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt=""></a>
+                    <span class="movie-list-item-title" style="color: white; font-size:20px">Naruto</span>
+                </div>
+            </div>
+            <div class="movie-list">
+                <div class="movie-list-item-img">
+                    <a href = "https://zoro.to/b-the-beginning-1899?ref=search" type="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPzvR4vgYaKGEK0ChtC320RuhTKFqTizAfZ2G6Mp7TpDUrwcmX" height = 395px; width =255px; alt=""></a>
+                    <span class="movie-list-item-title"style="color: white; font-size:20px">B:the beginning</span>
+                </div>
+            </div>
+            <div class="movie-list">
+                <div class="movie-list-item-img">
+                 <a href="https://zoro.to/castlevania-17870?ref=search" type="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA3CBmUJAWcHZghXqZc1qAKWhIMjfih-ilb5utWssQBUBly0KR" height = 395px; width =255px; alt=""></a>
+                    <span class="movie-list-item-title" style="color: white; font-size:20px">Castlevania</span>
+                </div>
+            </div>
+            <div class="movie-list">
+                <div class="movie-list-item-img">
+                    <a href="https://9anime.se/watch/black-lagoon-456?ep=9717" type=_blank""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS89csQgViwGA538uSVD6p-UYp6DifAS9ur4VTbX8GKUTJSlc2P"height = 395px; width =255px;alt=""></a>
+                    <span class="movie-list-item-title" style="color: white; font-size:20px">Blackclover</span>
+                </div>
+            </div>
+            <div class="movie-list">
+                <div class="movie-list-item-img">
+                    <a href="https://zoro.to/fatestay-night-unlimited-blade-works-268?ref=search" type="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbffAZPsxoqe3pAGEYiwdA5-XALqmieB9xFGscAqJMine91NZD" height =395px: width = 255px; alt=""></a>
+                    <span class="movie-list-item-title" style="color:white; font-size:20px">Fate Stay night</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="heading">              
+       <h1>Some Popular Animes</h1>
+    </div>
+    <br>
+    <ul>
+        <br>
+        <li>
+            <div class="header" id="first">
+                <h2><b>Naruto Shippuden</b></h2>
+            </div>
+
+            <div class="image">
+                <img src="https://www.teahub.io/photos/full/90-904342_naruto-shippuden-wallpaper-4k.jpg" height=500px width=890px alt="Naruto Shippuden">
+            </div>
+            <div class="main-content">
+                <p><b>Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.
+                    <br>
+                    <br>
+                    <a href="https://zoro.to/naruto-677?ref=search" type="_blank"> < Click here to watch> </a>
+                </b></p>
+
+        </li>
+        <br>
+        <li>
+            <div class="header">
+                <h2><b>One Piece</b></h2>
+            </div>
+            <div class="image">
+                <img src="https://c4.wallpaperflare.com/wallpaper/114/1008/41/one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg" height=500px width=890px alt="One Piece">
+            </div>
+            <div class="main-content">
+                <p><b>One Piece is a Japanese anime television series based on Eiichiro Oda's manga series of the same name. The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as "One Piece" in order to become the next Pirate King.
+                    <br>
+                    <br>
+                    <a href="https://zoro.to/one-piece-100?ref=search" type="_blank"> < Click here to watch> </a>
+                </b></p>
+            </div>
+        </li>
+        <br>
+        <li>
+            <div class="header">
+                <h2><b>Pokemon</b></h2>
+            </div>
+            <div class="image">
+                <img src="https://c4.wallpaperflare.com/wallpaper/1014/464/849/pokemon-artwork-pikachu-ash-ketchum-wallpaper-preview.jpg" height=500px width=890px alt="Pokemon">
+            </div>
+            <div class="main-content">
+                <p><b>Pokémon was invented by a Japanese man named Satoshi Tajiri and his friend Ken Sugimori, who is an illustrator. ... In the early 1990s, inspired by his childhood exploring forests and finding bugs and tadpoles, Satoshi came up with the idea for Pocket Monsters (or as it's better known Pokémon), and pitched it to Nintendo.
+                  <br>
+                  <br>
+                  <a href="https://zoro.to/pokemon-mewtwo-strikes-backevolution-7394?ref=search" type="_blank"> < Click here to watch> </a>  
+                </b></p>
+            </div>
+        </li>
+        <br>
+        <li>
+            <div class="header">
+                <h2><b>Code Geass</b></h2>
+            </div>
+            <div class="image">
+                <img src="https://wallpapercave.com/wp/wp8969296.jpg " height=500px width=890px alt="Code Geass">
+            </div>
+            <div class="main-content">
+                <p><b>Code Geass: Lelouch of the Rebellion (Japanese: コードギアス 反逆のルルーシュ, Hepburn: Kōdo Giasu: Hangyaku no Rurūshu), often referred to simply as Code Geass, is a Japanese anime television series produced by Sunrise. It was directed by Gorō Taniguchi and written by Ichirō Ōkouchi, with original character designs by Clamp. Set in an alternate timeline, it follows the exiled prince Lelouch vi Britannia, who obtains the "power of absolute obedience" from a mysterious woman named C.C. Using this supernatural power, known as Geass, he leads a rebellion against the rule of the Holy Britannian Empire, commanding a series of mecha battles.
+                    <br>
+                    <br>
+                    <a href="https://zoro.to/code-geass-lelouch-of-the-rebellion-r2-17?ref=search" type="_blank"> < Click here to watch> </a>
+                </b></p>
+            </div>
+        </li>
+        <br>
+        <li>
+            <div class="header">
+                <h2><b>Chuunibyou demo Koi ga Shitai!</b></h2>
+            </div>
+            <div class="image">
+                <img src="https://www.wallpaperup.com/uploads/wallpapers/2016/11/11/1039651/1d77c99916a1bc52804dd139150e6988-700.jpg" height=500px width=890px alt="Chuunibyou demo Koi ga Shitai!">
+            </div>
+            <div class="main-content">
+                <p><b>The series follows a high school boy named Yūta Togashi, who tries to discard his embarrassing past grandiose delusions, until he meets a girl named Rikka Takanashi, who exhibits her own signs of chūnibyō syndrome.
+                    <br>
+                    <br>
+                    <a href="https://zoro.to/love-chunibyo-other-delusions-2nd-season-heart-throb-1392?ref=search" type="_blank"> < Click here to watch></a>
+                </b></p>
+            </div>
+        </li>
+        <br>
+        <li>
+            <div class="header">
+                <h2><b>Demon Slayer</b></h2>
+            </div>
+            <div class="image">
+                <img src="https://wallpapercave.com/wp/wp4741022.png" height=500px width=890px alt="Demon Slayer">
+            </div>
+            <div class="main-content">
+                <p><b>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his younger sister Nezuko turned into a demon.
+                    <br>
+                    <br>
+                    <a href="https://zoro.to/demon-slayer-mt-natagumo-arc-17858?ref=search" type="_blank"> < Click here to watch></a>
+                </b></p>
+            </div>
+        </li>
+    </ul>
+    <br>
+    <br>
+
+    <div class="content-primary">
+        <h3>Visit us on Social Media</h3>
+    </div>
+
+    <div class="social-media">
+        <div class="icon">
+            <img src="https://i.pinimg.com/736x/26/a2/85/26a2857a33ac96048936429b907be8ba.jpg" style="height:100px;width:100px">
+            <a href="http://facebook.com"> 
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/new-tab-2710902-2251420.png"style="height:100px;width:100px">
+            </a>
+        </div>
+        <div class="icon">
+            <img src="https://swall.teahub.io/photos/small/41-418673_instagram-photo-full-hd.jpg" style="height:100px;width:200px">
+            <a href="http://instagram.com/"> 
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/new-tab-2710902-2251420.png"style="height:100px;width:200px">
+            </a>
+        </div>
+        <div class="icon">
+            <img src="https://ak.picdn.net/shutterstock/videos/1063781164/thumb/5.jpg?ip=x480"style="height:100px;width:200px">
+            <a href="http://twitter.com/"> 
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/new-tab-2710902-2251420.png" style="height:100px;width:200px">
+            </a>
+        </div>
+        <div class="icon">
+            <img src="https://lh6.googleusercontent.com/proxy/BF9tiip9_I5c3JLGlGRNSkDwUL1RGt0YYU45brQYGQjIYGcRkmdT_7NRQidGkJUk-J-U4aHwvSjFZWJ3qeNjyzvEVLPvDVqDZW56YLNJWle0OmH5qgODpg-Xk1vhBPyaZFfuYOmwsAHwezS3HVtZSShxL_Nhqe0YG8SIajjTr6oIKZTE6NPRFrygtOxlHEL3e1oZFIKB7uPsNP0E0xxCusrHENM5aekB3ai-4cVWQ3yJ1YY=s0-d" style="height:100px;width:100px">
+            <a href="http://youtube.com/watch"> 
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/new-tab-2710902-2251420.png" style="height:100px;width:100px">
+            </a>
+        </div>
+    </div>
+
+    <div class="Developers-information" style="text-align:center">
+        <div>
+            <a>
+            <p style="color: yellow" style="font-size:40px"><b><u>Developer information</u></b></p>
+            
+            <div style="text-align:center">
+                <p style="color: yellow">
+                <a href="https://www.linkedin.com/in/aryan-rana-5b65a821a/">
+                Aryan Rana
+                </a>
+                </p>
+                <p>
+                <a href="https://www.linkedin.com/in/ayush-sharma-a3808a218">
+                Ayush Sharma
+                </a>
+                </p>
+                <p>
+                <a href="https://www.linkedin.com/in/apoorva-gupta-b52025208/">
+                Apoorva Gupta
+                </a>
+                </p>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div id="about-us">
+        <a href="#">Go back to top</a>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

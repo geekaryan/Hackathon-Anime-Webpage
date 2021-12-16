@@ -1,0 +1,35 @@
+body{ 
+    background:black;
+}
+.movie-list-container{
+    padding: 20px;
+}
+.movie-list-wrapper{
+    display: flex;
+    align-items: center;
+    height: 420px;
+    object-fit: cover;
+}
+.movie-list-wrapper:hover .movie-list-item-img{ 
+    transform: scale(1.2s);
+}
+
+.movie-list-item-img{
+    width: 260px;
+    height: 395px;
+    object-fit: cover;
+
+}
+.movie-list-container{ 
+    padding: 20px;
+}
+
+.movie-list-item-img{ 
+    width: 260px;
+    height:395px;
+    object-fit: cover;
+}
+
+.movie-list-item-img:hover{
+    opacity: 1;
+}
